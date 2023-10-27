@@ -65,6 +65,18 @@ const Header = () => {
                     size={20}
                     className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
                 />
+                <AiFillMessage
+                    size={20}
+                    className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+                />
+                <AiFillBell
+                    size={20}
+                    className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+                />
+                <MdOutlineExpandMore
+                    size={20}
+                    className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+                />
             </div>
         </div>
     );
