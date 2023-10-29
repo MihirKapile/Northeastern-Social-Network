@@ -12,6 +12,7 @@ import { addPost, selectPost } from "../public/src/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const CreatePost = () => {
+  const NEU_SOCIAL_NETWORK_ENDPOINT = "";
   const dispatch = useDispatch();
   const { data: session, status } = useSession();
   const inputRef = useRef(null);
@@ -46,7 +47,7 @@ const CreatePost = () => {
     formData.append("profilePic", session?.user.image);
 
     axios
-      .post(FACEBOOK_CLONE_ENDPOINT, formData, {
+      .post(NEU_SOCIAL_NETWORK_ENDPOINT, formData, {
         headers: { Accept: "application/json" },
       })
       .then((response) => {
