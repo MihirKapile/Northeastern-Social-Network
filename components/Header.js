@@ -24,7 +24,7 @@ const Header = () => {
           <input
             className="hidden lg:inline-flex bg-transparent focus:outline-none outline-none flex-shrink"
             type="text"
-            placeholder="Search Facebook"
+            placeholder="Search NEU SV"
           />
         </div>
       </div>
