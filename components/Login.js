@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { signIn } from "next-auth/react";
+import {FcGoogle} from "react-icons/fc"
 ("next-auth/client");
 
 const Login = () => {
@@ -25,15 +26,20 @@ const Login = () => {
       />
 
         <a
+            style={{width:460,display: "flex", alignItems:"center",justifyContent:"center"}}
             onClick={() => signIn("azure-ad")}
             className="px-20 py-5 z-10 text-xl cursor-pointer -mt-16 bg-red-300 rounded-md text-white">
             Sign in with Northeastern Account
         </a>
 
       <a
+        style={{width:460,display: "flex", alignItems:"center",justifyContent:"center"}}
         onClick={() => signIn("google")}
         className="px-20 py-5 z-10 text-xl cursor-pointer -mt-16 bg-red-300 rounded-md text-white">
-        Guest? Sign in with Google
+        <div style={{display:"flex", alignItems:"center"}}>
+        <FcGoogle className="mx-2"/>Guest? Sign in with Google
+        </div>
+        
       </a>
 
     </div>
