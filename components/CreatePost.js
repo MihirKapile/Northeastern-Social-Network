@@ -12,7 +12,7 @@ import { addPost, selectPost } from "../public/src/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const CreatePost = () => {
-  const NEU_SOCIAL_NETWORK_ENDPOINT = "";
+  const NEU_SOCIAL_NETWORK_ENDPOINT = "http://localhost:8080/api/v1/post";
   const dispatch = useDispatch();
   const { data: session, status } = useSession();
   const inputRef = useRef(null);

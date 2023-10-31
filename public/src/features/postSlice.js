@@ -7,13 +7,13 @@ export const postSlice = createSlice({
   },
   reducers: {
     addPost: (state, action) => {
-    //   console.log("AddPost Action");
-    //   state.value.unshift(action.payload);
-    state.value.push(action.payload);
+    //console.log("AddPost Action");
+        state.value.unshift(action.payload);
+    //state.value.push(action.payload);
     },
     addAllPost: (state, action) => {
     //   console.log("AddPost Action");
-    //   state.value.push(...action.payload);
+        state.value.push(...action.payload);
     },
   },
 });
