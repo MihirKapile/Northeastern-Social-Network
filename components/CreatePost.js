@@ -4,7 +4,6 @@ import { HiOutlineVideoCamera } from "react-icons/hi";
 import { IoMdPhotos } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
 import {signOut, useSession} from "next-auth/react";
-import Sidebaritem from "@/components/Sidebaritem";
 import {AiOutlineUser} from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import axios from "axios";
