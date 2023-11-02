@@ -1,6 +1,7 @@
 import React from "react";
 import CreatePost from "./CreatePost";
 import Post from "./Post";
+import Posts from "@/components/Posts";
 
 const Feed = () => {
   return (
@@ -9,7 +10,7 @@ const Feed = () => {
         {/* Create Box */}
         <CreatePost />
         {/* Posts */}
-        <Post />
+        <Posts />
       </div>
     </div>
   );

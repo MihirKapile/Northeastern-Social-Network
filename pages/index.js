@@ -22,7 +22,7 @@ export default function Home({session}) {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
-            <main class="flex bg-gray-100">
+            <main className="flex bg-gray-100">
                 <Sidebar/>
                 <Feed/>
                 <RightSidebar/>

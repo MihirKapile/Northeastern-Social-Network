@@ -12,7 +12,7 @@ import { addPost, selectPost } from "../public/src/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const CreatePost = () => {
-  const NEU_SOCIAL_NETWORK_ENDPOINT = "";
+  const NEU_SOCIAL_NETWORK_ENDPOINT = "http://localhost:8080/api/v1/post";
   const dispatch = useDispatch();
   const { data: session, status } = useSession();
   const inputRef = useRef(null);
@@ -72,12 +72,12 @@ const CreatePost = () => {
                 src={session.user.image}
                 height={40}
                 width={40}
-                className="hidden rounded-full cursor-pointer"
+                className="rounded-full cursor-pointer"
             />
         ) : (
             <AiOutlineUser
                 size={20}
-                className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+                className="lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
             />
         )}
 

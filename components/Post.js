@@ -12,7 +12,8 @@ const Post = () => {
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png" className="rounded-full w-10 h-10" />
           <div>
             <p className="font-medium">User Name</p>
-            <p className="text-xs text-gray-500">{new Date().toLocaleString()}</p>
+            {/*<p className="text-xs text-gray-500">{new Date().toLocaleString()}</p>*/}
+            <p className="text-xs text-gray-500">Time Example</p>
           </div>
         </div>
         <p className="py-4">Post Text Example</p>
