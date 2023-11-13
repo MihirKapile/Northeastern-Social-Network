@@ -12,13 +12,17 @@ export const postSlice = createSlice({
     state.value.push(action.payload);
     },
     addAllPost: (state, action) => {
-    //   console.log("AddPost Action");
-    //   state.value.push(...action.payload);
+      console.log("AddPost Action");
+      state.value.push(...action.payload);
+    },
+    updateAllPost: (state, action) => {
+      console.log("AddPost Action");
+      state.value = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addPost, addAllPost } = postSlice.actions;
+export const { addPost, addAllPost,updateAllPost } = postSlice.actions;
 export const selectPost = (state) => state.post.value;
 export default postSlice.reducer;
