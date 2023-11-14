@@ -32,10 +32,10 @@ const Sidebar = () => {
 
             <Sidebaritem Icon={ImUsers} value="Friends"/>
             <Sidebaritem Icon={MdGroups} value="Groups"/>
-            <Sidebaritem Icon={AiOutlineShop} value="MarketPlace"/>
+            {/* <Sidebaritem Icon={AiOutlineShop} value="MarketPlace"/>
             <Sidebaritem Icon={MdOutlineOndemandVideo} value="Watch"/>
             <Sidebaritem Icon={BsStopwatch} value="Memeries"/>
-            <Sidebaritem Icon={MdOutlineExpandMore} value="See more"/>
+            <Sidebaritem Icon={MdOutlineExpandMore} value="See more"/> */}
         </div>
     );
 };
