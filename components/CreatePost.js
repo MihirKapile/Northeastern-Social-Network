@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { React, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { IoMdPhotos } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -72,6 +72,7 @@ const CreatePost = () => {
                 height={40}
                 width={40}
                 className="rounded-full cursor-pointer"
+                alt="User profile image"
             />
         ) : (
             <AiOutlineUser
