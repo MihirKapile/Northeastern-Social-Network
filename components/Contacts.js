@@ -9,13 +9,14 @@ const Contacts = ({ name, src, status }) => {
         height={40}
         width={40}
         className="rounded-full cursor-pointer"
+        alt="Profile Picture"
       />
       <p className="hidden sm:inline-flex text-sm">{name}</p>
       {status === "online" && (
-        <div className="bg-green-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
+        <div data-testid="status-indicator-online" className="bg-green-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
       )}
       {status === "offline" && (
-        <div className="bg-gray-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
+        <div data-testid="status-indicator-online" className="bg-gray-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
       )}
     </div>
   );
