@@ -3,7 +3,7 @@
 exports[`Sidebaritem component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center space-x-2 py-3 pl-4  hover:bg-gray-200 rounded-l-xl cursor-pointer "
+    class="flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer"
     data-testid="MdGroups"
   >
     <svg

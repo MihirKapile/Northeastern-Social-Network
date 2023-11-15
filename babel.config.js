@@ -5,4 +5,3 @@ module.exports = {
       'next/babel', // This preset is important for Next.js projects
     ],
   };
-  
