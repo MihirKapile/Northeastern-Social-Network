@@ -18,6 +18,7 @@ const Header = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png"
           height={40}
           width={40}
+          alt={'Northeastern University'}
         />
         <div className="flex items-center space-x-2 px-2 ml-2 rounded-full bg-gray-100 text-gray-500">
           <HiOutlineSearch size={20} />
@@ -67,6 +68,7 @@ const Header = () => {
                 width={40}
                 onClick={signOut}
                 className="rounded-full cursor-pointer"
+                alt={'user photo'}
             />
         ) : (
             <AiOutlineUser
