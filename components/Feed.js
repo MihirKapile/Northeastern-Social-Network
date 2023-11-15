@@ -8,9 +8,9 @@ const Feed = () => {
     <div className="flex-grow h-screen pt-6 mr-6 overflow-y-auto no-scrollbar">
       <div className="mx-auto max-w-md md:max-w-xl lg:max-w-2xl">
         {/* Create Box */}
-        <CreatePost />
+        <CreatePost data-testid="create-post"/>
         {/* Posts */}
-        <Posts />
+        <Posts data-testid="posts"/>
       </div>
     </div>
   );
