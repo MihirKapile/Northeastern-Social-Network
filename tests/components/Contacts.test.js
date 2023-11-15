@@ -4,7 +4,11 @@ import Contacts from "../../components/Contacts";
 
 describe("Contacts Component", () => {
     it("renders without crashing", () => {
-        render(<Contacts />);
+        render(<Contacts
+            name="friend_1"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png"
+            status="online"
+        />);
     });
 
     // Test for rendering the component with required props
@@ -29,12 +33,13 @@ describe("Contacts Component", () => {
                 status="online"
             />
         );
+        // const statusIndicator = screen.getByTestId("status-indicator-online");
         const statusIndicator = screen.getByTestId("status-indicator-online");
         expect(statusIndicator).toBeInTheDocument();
     });
 
     // Test for offline status indicator
-    /* it("shows offline status when status is offline", () => {
+     it("shows offline status when status is offline", () => {
         render(
             <Contacts
                 name="Jane Doe"
@@ -44,5 +49,5 @@ describe("Contacts Component", () => {
         );
         const statusIndicator = screen.getByTestId("status-indicator-offline");
         expect(statusIndicator).toBeInTheDocument();
-    }); */
+    });
 });

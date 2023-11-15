@@ -10,13 +10,13 @@ const RightSidebar = () => {
       <div className="flex items-center text-gray-500">
         <p className="flex text-lg font-semibold flex-grow">Contacts</p>
         <div className="flex space-x-1 px-2">
-          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer">
+          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer" data-testid = "RiVideoAddFill">
             <RiVideoAddFill />
           </div>
-          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer">
+          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer" data-testid = "BiSearch">
             <BiSearch />
           </div>
-          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer">
+          <div className="rounded-full p-2 hover:bg-gray-200 cursor-pointer" data-testid = "CgMoreAlt">
             <CgMoreAlt />
           </div>
         </div>

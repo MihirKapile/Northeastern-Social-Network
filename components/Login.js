@@ -23,6 +23,7 @@ const Login = () => {
         className="space-y-[10px]"
         height={240}
         width={240}
+        alt="Northeastern University"
       />
 
         <a

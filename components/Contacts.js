@@ -16,7 +16,7 @@ const Contacts = ({ name, src, status }) => {
         <div data-testid="status-indicator-online" className="bg-green-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
       )}
       {status === "offline" && (
-        <div data-testid="status-indicator-online" className="bg-gray-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
+        <div data-testid="status-indicator-offline" className="bg-gray-500 h-4 w-4 rounded-full absolute left-5 bottom-2 border-2"></div>
       )}
     </div>
   );
