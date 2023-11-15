@@ -6,7 +6,7 @@ exports[`Sidebar component matches snapshot 1`] = `
     class="hidden lg:inline-flex flex-col py-2 pl-2 max-w-xl lg:min-w-[320px]"
   >
     <div
-      class="flex items-center space-x-2 py-3 pl-4  hover:bg-gray-200 rounded-l-xl cursor-pointer "
+      class="flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer"
     >
       <img
         alt="photo_id"
@@ -27,7 +27,8 @@ exports[`Sidebar component matches snapshot 1`] = `
       </p>
     </div>
     <div
-      class="flex items-center space-x-2 py-3 pl-4  hover:bg-gray-200 rounded-l-xl cursor-pointer "
+      class="flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer"
+      data-testid="MdGroups"
     >
       <svg
         class="h-8 w-8 text-red-300"
@@ -54,7 +55,8 @@ exports[`Sidebar component matches snapshot 1`] = `
       </p>
     </div>
     <div
-      class="flex items-center space-x-2 py-3 pl-4  hover:bg-gray-200 rounded-l-xl cursor-pointer "
+      class="flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer"
+      data-testid="MdGroups"
     >
       <svg
         class="h-8 w-8 text-red-300"
