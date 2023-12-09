@@ -8,6 +8,7 @@ import { FcGoogle } from "react-icons/fc";
  */
 const Login = () => {
     return (
+
         <div className="flex flex-col items-center mx-auto space-y-[15px]">
             {/* Logo of Northeastern University */}
             <Image

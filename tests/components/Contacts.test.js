@@ -21,7 +21,7 @@ describe("Contacts Component", () => {
             />
         );
         expect(screen.getByText("John Doe")).toBeInTheDocument();
-        // Since Next.js Image is difficult to test directly, you might check for alt text or other attributes if you have them.
+        // Since Next.js Image is difficult to test directly, we might check for alt text or other attributes if you have them.
     });
 
     // Test for online status indicator
