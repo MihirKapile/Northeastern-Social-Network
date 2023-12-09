@@ -44,7 +44,7 @@ const Header = () => {
               size={25}
             />
           </div>
-          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
+          {/* <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
             <AiOutlineShop className="mx-auto text-gray-500" size={25} />
           </div>
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
@@ -52,7 +52,7 @@ const Header = () => {
               className="mx-auto text-gray-500"
               size={25}
             />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -81,7 +81,7 @@ const Header = () => {
         <p className="hidden xl:inline-flex font-semibold text-sm whitespace-nowrap p-3 max-w-xs">
           {session?.user.name.split(" ")[0]}
         </p>
-        <CgMenuGridO
+        {/* <CgMenuGridO
           size={20}
           className=" hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
         />
@@ -96,7 +96,7 @@ const Header = () => {
         <MdOutlineExpandMore
           size={20}
           className=" hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
-        />
+        /> */}
       </div>
     </div>
   );
