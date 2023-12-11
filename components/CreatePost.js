@@ -113,10 +113,10 @@ const CreatePost = () => {
 
             {/* Options for adding video, photos, or feelings/activities */}
             <div className="flex justify-evenly py-2">
-                <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:cursor-pointer hover:bg-gray-100 rounded-md">
+                {/* <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:cursor-pointer hover:bg-gray-100 rounded-md">
                     <HiOutlineVideoCamera className="text-red-400" size={20} />
                     <p className="font-semibold text-gray-600">Live Video</p>
-                </div>
+                </div> */}
                 <div
                     onClick={handleClick}
                     className="flex items-center p-1 space-x-1 flex-grow justify-center hover:cursor-pointer hover:bg-gray-100 rounded-md"
@@ -131,12 +131,12 @@ const CreatePost = () => {
                         hidden
                     />
                 </div>
-                <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:cursor-pointer hover:bg-gray-100 rounded-md">
+                {/* <div className="flex items-center p-1 space-x-1 flex-grow justify-center hover:cursor-pointer hover:bg-gray-100 rounded-md">
                     <BsEmojiSmile className="text-red-400" size={20} />
                     <p className="font-semibold text-gray-600">
                         Feeling/Activity
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

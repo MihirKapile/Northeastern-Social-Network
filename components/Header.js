@@ -35,7 +35,7 @@ const Header = () => {
           <div className="flex items-center  h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
             <HiOutlineHome className="mx-auto text-red-400" size={25} />
           </div>
-          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
+          {/* <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
             <RiFlag2Line className="mx-auto text-gray-500" size={25} />
           </div>
           <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
@@ -43,7 +43,7 @@ const Header = () => {
               className="mx-auto text-gray-500"
               size={25}
             />
-          </div>
+          </div> */}
           {/* <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer ">
             <AiOutlineShop className="mx-auto text-gray-500" size={25} />
           </div>

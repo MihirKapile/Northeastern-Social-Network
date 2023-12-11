@@ -33,8 +33,8 @@ const Sidebar = () => {
             )}
 
             {/* Sidebar items */}
-            <Sidebaritem Icon={ImUsers} value="Friends" />
-            <Sidebaritem Icon={MdGroups} value="Groups" />
+            {/* <Sidebaritem Icon={ImUsers} value="Friends" />
+            <Sidebaritem Icon={MdGroups} value="Groups" /> */}
             {/* Uncomment below lines for additional sidebar items */}
             {/* <Sidebaritem Icon={AiOutlineShop} value="MarketPlace"/>
                <Sidebaritem Icon={MdOutlineOndemandVideo} value="Watch"/>
