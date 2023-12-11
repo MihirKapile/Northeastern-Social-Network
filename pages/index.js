@@ -7,6 +7,14 @@ import { getSession } from "next-auth/react";
 import Login from "@/components/Login";
 import Feed from "@/components/Feed";
 import RightSidebar from "@/components/RightSidebar";
+import axios from "axios";
+import React, { useEffect } from "react";
+
+
+
+
+
+
 
 /**
  * The Home page of the Northeastern Social Network.
@@ -18,7 +26,27 @@ import RightSidebar from "@/components/RightSidebar";
 export default function Home({ session }) {
     // If the user is not logged in, display the login screen
     if (!session) return <Login />;
-
+    {
+        const NEU_SOCIAL_NETWORK_ENDPOINT = "http://localhost:8080/api/login";
+        const timestamp = new Date().toISOString();
+        console.log(session.user.name + " Login timestamp:", timestamp);
+        const userData = {
+            username: session.user.name,
+            loginTimeStamp: timestamp
+        };
+        console.log(userData);
+        axios
+            .post(NEU_SOCIAL_NETWORK_ENDPOINT, userData, {
+                headers: { "Accept": "application/json",
+                    'Content-Type': 'application/json'},
+            })
+            .then((response) => {
+                console.log("login info has been saved");
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
     return (
         <div>
             {/* Page Head with meta tags and title */}

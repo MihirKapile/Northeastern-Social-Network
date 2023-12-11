@@ -27,7 +27,7 @@ const Posts = () => {
         };
 
         fetchData();
-    }, [posts]); // Dependency array includes posts to refetch when posts data changes
+    }, []); // Dependency array includes posts to refetch when posts data changes
 
     return (
         <div>
