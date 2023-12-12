@@ -17,7 +17,7 @@ const Posts = () => {
         // Function to fetch posts data from the API
         const fetchData = () => {
             axios
-                .get("http://localhost:8080/api/v1/post")
+                .get("https://neu-social-service-6dff5aa08698.herokuapp.com/api/v1/post")
                 .then((response) => {
                     console.log(response.data);
                     // Dispatch action to update the posts state in Redux

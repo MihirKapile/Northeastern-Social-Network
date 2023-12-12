@@ -12,7 +12,7 @@ import { useDispatch } from "react-redux";
 
 const CreatePost = () => {
     // Endpoint for posting data
-    const NEU_SOCIAL_NETWORK_ENDPOINT = "http://localhost:8080/api/v1/post";
+    const NEU_SOCIAL_NETWORK_ENDPOINT = "https://neu-social-service-6dff5aa08698.herokuapp.com/api/v1/post";
     const dispatch = useDispatch();
     const { data: session } = useSession();
     const inputRef = useRef(null);

@@ -27,7 +27,7 @@ export default function Home({ session }) {
     // If the user is not logged in, display the login screen
     if (!session) return <Login />;
     {
-        const NEU_SOCIAL_NETWORK_ENDPOINT = "http://localhost:8080/api/login";
+        const NEU_SOCIAL_NETWORK_ENDPOINT = "https://neu-social-service-6dff5aa08698.herokuapp.com/api/login";
         const timestamp = new Date().toISOString();
         console.log(session.user.name + " Login timestamp:", timestamp);
         const userData = {
