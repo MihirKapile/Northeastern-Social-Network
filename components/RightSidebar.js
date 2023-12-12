@@ -8,53 +8,67 @@ import Contacts from "./Contacts";
  * RightSidebar component displays the contacts section with various interaction options.
  */
 const RightSidebar = () => {
-    return (
-        <div className="hidden md:inline-flex flex-col pt-4 max-w-xl md:min-w-[200px] lg:min-w-[250px]">
-            {/* Header section with title and interaction icons */}
-            <div className="flex items-center text-gray-500">
-                {/* <p className="flex text-lg font-semibold flex-grow">Contacts</p> */}
-                <div className="flex space-x-1 px-2">
-                    {/* Icons for additional functionalities like video add, search, and more */}
-                    {/* <div
-                        className="rounded-full p-2 hover:bg-gray-200 cursor-pointer"
-                        data-testid="RiVideoAddFill"
-                    >
-                        <RiVideoAddFill />
-                    </div>
-                    <div
-                        className="rounded-full p-2 hover:bg-gray-200 cursor-pointer"
-                        data-testid="BiSearch"
-                    >
-                        <BiSearch />
-                    </div>
-                    <div
-                        className="rounded-full p-2 hover:bg-gray-200 cursor-pointer"
-                        data-testid="CgMoreAlt"
-                    >
-                        <CgMoreAlt />
-                    </div> */}
-                </div>
-            </div>
+  const AcademicAdvisorList = [
+    { id: 1, name: "Tori Bowser", email: "t.bowser@northeastern.edu" },
+    { id: 2, name: "Vivian Guerrero", email: "v.guerrero@northeastern.edu" },
+    { id: 2, name: "Sweeny Youkhane", email: "s.youkhane@northeastern.edu" },
+    // Add more contacts as needed
+  ];
 
-            {/* List of contacts */}
-            {/* Each Contacts component represents an individual contact item */}
-            {/* <Contacts
-                name="friend_1"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png"
-                status="online"
-            />
-            <Contacts
-                name="friend_2"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png"
-                status="offline"
-            />
-            <Contacts
-                name="friend_3"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png"
-                status="online"
-            /> */}
-        </div>
+  const studentServicesList = [
+    { id: 1, name: "Northeastern OGS Department", phone: "+1 617-373-2310", email: "OGS@northeastern.edu" },
+    { id: 2, name: "Global Learner Support", email: "globallearnersupport@northeastern.edu" },
+    // Add more student services as needed
+  ];
+
+  // Contact rendering function
+  const renderContacts = (contacts) => {
+    return (
+      <div className="space-y-4">
+        {contacts.map((contact) => (
+          <div
+            key={contact.id}
+            className="p-4 bg-blue-200 rounded-lg shadow-md mb-4"
+          >
+            <p className="text-lg font-semibold">{contact.name}</p>
+            {/* Check if the phone number exists before rendering */}
+            {contact.phone && (
+              <p className="text-gray-600">
+                Phone number:{" "}
+                <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+              </p>
+            )}
+            {/* Make the email clickable */}
+            <p className="text-blue-600">
+              <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            </p>
+          </div>
+        ))}
+      </div>
     );
+  };
+
+  return (
+    <div className="hidden md:inline-flex flex-col pt-4 max-w-xl md:min-w-[200px] lg:min-w-[250px] h-screen overflow-y-auto max-h-screen">
+      {/* Header section with title and interaction icons */}
+      <div className="flex items-center text-white bg-red-500">
+        <div className="flex space-x-1 px-2"></div>
+      </div>
+
+      {/* Contacts section */}
+      <div className="contacts-section p-4 bg-gradient-to-r from-red-400 to-blue-600 rounded-lg shadow-md mb-4">
+        <h2 className="text-2xl font-bold mb-2 text-white"> Academic Advisors Contacts</h2>
+        {renderContacts(AcademicAdvisorList)}
+      </div>
+
+      {/* Student services section */}
+      <div className="student-services-section p-4 bg-gradient-to-r from-red-400 to-blue-600 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold mb-2 text-white">Student Services</h2>
+        {renderContacts(studentServicesList)}
+      </div>
+    </div>
+
+  );
 };
 
 export default RightSidebar;

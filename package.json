@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.23.3",
-        "@babel/preset-env": "^7.23.3",
+        "@babel/preset-env": "^7.23.6",
         "@babel/preset-react": "^7.23.3",
         "@swc/jest": "^0.2.29",
         "@testing-library/jest-dom": "^6.1.4",

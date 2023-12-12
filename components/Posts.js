@@ -7,6 +7,8 @@ import Post from "./Post";
 /**
  * Posts component fetches and displays a list of posts.
  */
+
+
 const Posts = () => {
     const dispatch = useDispatch();
     const posts = useSelector(selectPost);
