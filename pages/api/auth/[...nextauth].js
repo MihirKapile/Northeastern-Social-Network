@@ -17,4 +17,5 @@ export default NextAuth({
       tenantId: process.env.AZURE_AD_TENANT_ID,
     }),
   ],
+    secret: process.env.NEXTAUTH_SECRET,
 });
