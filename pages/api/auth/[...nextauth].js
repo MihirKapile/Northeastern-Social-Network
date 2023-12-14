@@ -20,6 +20,6 @@ export default NextAuth({
       tokenUrl: "https://login.microsoftonline.com/${process.env.AZURE_AD_TENANT_ID}/oauth2/v2.0/token",
     }),
   ],
-    secret: process.env.NEXTAUTH_SECRET,
+    secret: e83b8faf28528c41cd46ce98e34bd6d4fce9f3a1ed4fa6b1b0fba65cfbf67ff4,
     site: process.env.VERCEL_URL,
 });
